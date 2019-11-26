@@ -1,0 +1,339 @@
+/* =================================
+  Mobile-First Base Element Styles
+==================================== */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(44, 62, 80, 1);
+  background-color: white;
+  font-family: "Helvetica", "Arial", sans-serif ;
+  font-size: 1em;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+/* main header styles */
+
+.main-header {
+
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.main-header h1 {
+  font-size: 1.5em;
+  padding: 25px;
+  text-align: center;
+  background-color: rgba(44, 62, 80, 1);
+  color: white;
+  font-family: 'Merriweather', serif;
+
+}
+
+/* horizontal separater styles */
+
+hr.thick {
+  border-top: 4px solid rgba(44, 62, 80, 1);
+  margin-bottom: 2px;
+  margin-top: 25px;
+  width: 95%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+hr.thin {
+  border-top: 1px solid rgba(44, 62, 80, 1);
+  margin-bottom: 25px;
+  width: 95%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+hr.thin2 {
+  border-top: 1px solid rgba(44, 62, 80, 1);
+  margin-bottom: 25px;
+  width: 95%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/* =================================
+  Form Element Styles
+==================================== */
+
+.registration-form {
+  background-color: white;
+  border-radius: 3px;
+
+  max-width: 95%;
+  padding: 10px;
+  margin: 0 0 40px 0;
+  margin-top: 1em;
+}
+
+.form-intro {
+  text-align: center;
+  margin-top: -3em;
+  margin-bottom: 1em;
+  color: rgba(44, 62, 80, 1);
+}
+
+.form-intro h2 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.form-intro p {
+  color: #999999;
+}
+
+.contact-info {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  background-color: #f4f7f8;
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+input[placeholder] {
+  text-align: right;
+}
+
+.form-row input[type="text"]:invalid
+.form-row input[type="email"]:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.textarea-form-row textarea:focus {
+  border: 2px solid #1564bf;
+  }
+
+  input#zip-code {
+    max-width: 200px;
+  }
+
+  label.zip-code {
+    margin-top: -15px;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  /* checkbox styles */
+
+  .checkbox-options legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-options p {
+    font-size: 1em;
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-options .checkbox-form-row {
+    font-size: 1em;
+    margin-left: -12px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-options .checkbox-form-row label {
+    margin-left: 5px;
+  }
+
+
+/* radio button styles */
+
+.radio-options {
+  margin-bottom: 10px;
+}
+
+.radio-options legend {
+  width: 140px;
+  margin-left: -12px;
+  margin-bottom: 10px;
+}
+
+.radio-options .radio-form-row {
+  font-size: 1em;
+  margin-left: -12px;
+  margin-bottom: 5px;
+}
+
+.radio-options .radio-form-row label {
+  margin-left: 5px;
+}
+
+/* textarea styles */
+
+.textarea-form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border-radius: 10px;
+  min-height: 120px;
+
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.textarea-form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Submit Button Styles */
+
+.form-row .submit-btn {
+  font-size: 2em;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #4CBAAF;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 30px 60px;
+  cursor: pointer;
+}
+
+.form-row .submit-btn:hover {
+  background-color: #76AEED;
+}
+
+/* copyright footer styles */
+
+.copyright {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #999999;
+}
+
+
+/* =================================
+  Media Query Element Styles
+==================================== */
+
+@media (min-width: 768px) {
+  .registration-form {
+    max-width: 700px;
+  }
+
+  .main-header {
+    width: 100%;
+    margin-top: -21px;
+
+  }
+
+  .main-header h1 {
+    font-size: 2em;
+  }
+
+.form-row {
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  }
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row select,
+.form-row textarea {
+  width: 500px;
+  height: initial;
+  }
+
+.form-row label {
+  text-align: left;
+  width: 150px;
+  margin-top: 7px;
+  padding-right: 40px;
+  }
+
+  .form-intro h2 {
+    font-size: 1.6em;
+  }
+
+  /* horizontal separater styles */
+
+  hr.thick {
+    width: 625px;
+  }
+
+  hr.thin {
+    width: 625px;
+  }
+
+/* textarea styles */
+  .form-area .more-topics {
+    width: 200px;
+  }
+
+  .form-row .submit-btn {
+    width: 100%;
+  }
+
+}
